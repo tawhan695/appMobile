@@ -11,12 +11,22 @@ import { AppComponent } from './app.component';
 
 import { HttpClientModule } from '@angular/common/http';
  
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+// import { firebaseConfig } from './credentials';
+import { environment } from '../environments/environment';
 import 'chartjs-plugin-zoom';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,HttpClientModule],
+  imports: [BrowserModule, 
+    IonicModule.forRoot(),
+     AppRoutingModule,
+     HttpClientModule,
+     AngularFireModule.initializeApp(environment.firebaseConfig),
+     AngularFirestoreModule
+    ],
   providers: [
     StatusBar,
     SplashScreen,
