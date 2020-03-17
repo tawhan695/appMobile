@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon slot="icon-only" name="ios-arrow-back" (click)="closePage()"></ion-icon>
+    </ion-buttons>
+    <ion-title>เลือกช่องทางในการรับแจ้งเตือน</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <!-- <ion-card> -->
+    <img src="/assets/line_notify.png" alt="" style="display: block; margin-left: auto; margin-right: auto; width:50%;"/>
+<br>
+    <!-- <ion-card-content> -->
+      <!-- <ion-item-group>
+        
+        <ion-label fixed text-center>กรอกชื่อบัญชีผู้ใช้</ion-label>
+        <br>
+        <ion-item lines="none" class ="itemform">
+          <ion-input type="text" placeholder="ชื่อผู้ใช้งาน"></ion-input>
+        </ion-item>
+        <br>
+      </ion-item-group> -->
+      
+      
+      <ion-item-group class="block-div">
+        <ion-item lines="none" class ="itemform">
+          <ion-label fixed>การแจ้งเตือนผ่านโมบาย</ion-label>
+          <ion-toggle [(ngModel)]="sausage"></ion-toggle>
+        </ion-item>
+      </ion-item-group>
+
+      <ion-item-group>
+        <ion-item lines="none" class ="itemform">
+          <ion-label fixed>การแจ้งเตือนผ่านไลน์ (LINE Notify)</ion-label>
+          <ion-toggle [(ngModel)]="mushrooms"></ion-toggle>
+        </ion-item>
+      </ion-item-group>
+      
+
+    <!-- </ion-card-content> -->
+  <!-- </ion-card> -->
+  
+  
+</ion-content>

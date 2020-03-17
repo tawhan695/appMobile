@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon slot="icon-only" name="ios-arrow-back" (click)="closePage()"></ion-icon>
+    </ion-buttons>
+    
+    <ion-title>ข้อมูลผู้ใช้งาน</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item-group>
+      <ion-item>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="/assets/person_1.jpg">
+          </ion-thumbnail>
+          <ion-label>นายกอไก่ ขอไข่</ion-label>
+        </ion-item>
+      </ion-item>
+      <ion-card-content>
+        <ion-item>
+          <ion-label>ประจำอาคาร : </ion-label>9
+        </ion-item>
+        <br>
+        <div align="center">
+          <ion-button ion-button color="secondary" (click)="openModal()" expand="full">แก้ไขรหัสผ่าน</ion-button>
+        </div>
+      </ion-card-content>
+    </ion-item-group>
+  </ion-card>
+  
+    <!-- <ion-item-divider>
+      <ion-label>ข้อมูลส่วนตัว</ion-label>
+    </ion-item-divider> -->
+  
+    
+  
+  
+  
+  
+  <!-- <ion-thumbnail>
+    <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+  </ion-thumbnail> -->
+  
+  
+</ion-content>

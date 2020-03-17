@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ข้อมูลขยะรีไซเคิล</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <ion-card-header>
+    <ion-card-title>แสดงข้อมูลขยะแต่ละชนิด (เปอร์เซ็นต์)</ion-card-title>
+  </ion-card-header>
+  <canvas baseChart
+    [data]="pieChartData"
+    [labels]="pieChartLabels"
+    [chartType]="pieChartType"
+    [options]="pieChartOptions"
+    [plugins]="pieChartPlugins"
+    [colors]="pieChartColors"
+    [legend]="pieChartLegend">
+  </canvas>
+
+  <br>
+  <ion-card-header>
+    <ion-card-title>แสดงข้อมูลขยะแต่ละชนิด (ชิ้น)</ion-card-title>
+  </ion-card-header>
+  <canvas baseChart
+    [data]="pieChartData2"
+    [labels]="pieChartLabels2"
+    [chartType]="pieChartType2"
+    [options]="pieChartOptions2"
+    [plugins]="pieChartPlugins2"
+    [colors]="pieChartColors2"
+    [legend]="pieChartLegend2">
+  </canvas>
+  <br>
+  <ion-card-header>
+    <ion-card-title>ข้อมูลเปรียบเทียบระหว่างขยะรีไซเคิลได้และรีไซเคิลไม่ได้</ion-card-title>
+  </ion-card-header>
+  <canvas baseChart
+    [datasets]="barChartData"
+    [labels]="barChartLabels"
+    [options]="barChartOptions"
+    [plugins]="barChartPlugins"
+    [legend]="barChartLegend"
+    [chartType]="barChartType">
+  </canvas>
+
+</ion-content>

@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon slot="icon-only" name="ios-arrow-back" (click)="closePage()"></ion-icon>
+    </ion-buttons>
+    <ion-title>รายงานข้อมูลขยะ</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-content>
+      <ion-item-group >
+        
+        <ion-label fixed text-center>เลือกรายงาน</ion-label>
+        <br>
+        <ion-item lines="none">
+          <select name="bin" class="itemform2" [(ngModel)]="list.item">
+            <option value="" disabled selected hidden>เลือกข้อมูลที่ต้องการ</option>
+            <option value="ข้อมูลปริมาณขยะแต่ละประเภท" >ข้อมูลปริมาณขยะแต่ละประเภท</option>
+            <option value="ข้อมูลขยะรีไซเคิล" >ข้อมูลขยะรีไซเคิล</option>
+            <option value="ข้อมูลขยะตามช่วงเวลา" >ข้อมูลขยะตามช่วงเวลา</option>
+          </select>
+        </ion-item>
+          
+        
+        <br>
+      </ion-item-group>
+      
+      
+      <ion-item-group class="block-div">
+        <br>
+        <ion-label fixed text-center>เลือกถังขยะ</ion-label>
+        <br>
+        <ion-item lines="none">
+          <select name="bin2" class="itemform2">
+            <option value="" disabled selected hidden>เลือกถังขยะ</option>
+            <option value="ถังขยะ 1" >ถังขยะ 1</option>
+            <option value="ถังขยะ 2" >ถังขยะ 2</option>
+            
+          </select>
+        </ion-item>
+          
+        
+        <br>
+      </ion-item-group>
+
+      <ion-item-group class="block-div">
+        <br>
+        <ion-label fixed text-center>วันที่ต้องการ</ion-label>
+        <br>
+        <ion-item lines="none" class ="itemform">
+          <ion-input type="date"></ion-input>
+        </ion-item>
+        <br>
+      </ion-item-group>
+      
+    
+      <br>
+      <div align="center">
+        <ion-button ion-button color="secondary" expand="full" (click)="type()">ค้นหา</ion-button>
+      </div>
+
+      
+
+    </ion-card-content>
+  </ion-card>
+  
+  
+</ion-content>
+

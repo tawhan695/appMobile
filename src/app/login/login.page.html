@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title text-center>
+      ล็อกอินเข้าสู่ระบบ
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card center text-center>
+    <!-- <ion-thumbnail>
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y" width="50%" height="50%">
+    </ion-thumbnail> -->
+    <!-- <ion-item>
+      <ion-icon name="pin" slot="start"></ion-icon>
+      <ion-label>ล็อกอินเข้าสู่ระบบ</ion-label>
+    </ion-item> -->
+      <img src="/assets/logo-2.png" alt="" style="display: block; margin-left: auto; margin-right: auto; width:50%;"/>
+    <ion-card-content>
+      <ion-item>
+        <ion-label fixed>Username : </ion-label>
+        <ion-input placeholder="กรอกชื่อบัญชีผู้ใช้"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>Password : </ion-label>
+        <ion-input placeholder="ใส่รหัสผ่าน"></ion-input>
+      </ion-item>
+      <br>
+      <a (click)="forget()">ลืมรหัสผ่าน</a>
+      <br>
+      <br>
+      <ion-button ion-button color="tertiary" (click)="menu()" expand="full">เข้าสู่ระบบ</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
